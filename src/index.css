@@ -1,0 +1,34 @@
+.app-wrapper {
+  display: grid;
+  margin: 0 auto;
+  grid-template-rows: 60px 1fr;
+  grid-template-columns: 2fr 10fr;
+  grid-template-areas:
+  "h h"
+  "n c";
+  max-width: 1200px;
+  /*max-height: 300px;*/
+}
+
+.header {
+  grid-area: h;
+  background-color: green;
+}
+
+.header img {
+  width: 40px;
+}
+
+.nav {
+  grid-area:n;
+  background-color: #61dafb;
+}
+
+.content {
+  grid-area: c;
+  background-color: pink ;
+}
+.content img {
+  max-width: 600px;
+  /*box-sizing: border-box;*/
+}
